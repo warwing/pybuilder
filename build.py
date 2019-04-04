@@ -19,12 +19,11 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
+from pybuilder import bootstrap
+from pybuilder.core import Author, init, use_plugin
 import sys
 
 sys.path.insert(0, 'src/main/python')  # This is only necessary in PyBuilder sources for bootstrap
-
-from pybuilder import bootstrap
-from pybuilder.core import Author, init, use_plugin
 
 bootstrap()
 
@@ -78,7 +77,7 @@ authors = [Author("Alexander Metzner", "alexander.metzner@gmail.com"),
            ]
 url = "http://pybuilder.github.io"
 license = "Apache License"
-version = "0.12.0.dev"
+version = "0.11.101.dev"
 
 requires_python = ">=2.7,!=3.0,!=3.1,!=3.2,!=3.3,<3.8"
 
